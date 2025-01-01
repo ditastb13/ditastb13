@@ -1,14 +1,13 @@
 proxies:
-- name: AKUN-GITNEW
-  server: vidio.xtls.my.id
+- name: trojan_Github
+  server: quiz.int.vidio.com
   port: 443
   type: trojan
-  password: fbc088b5-2fb4-4542-b0ca-75a8c8fea574
-  network: ws
-  sni: nusa.lowh.site
+  password: 3e1c01b6-37e9-4f05-a3c8-f3e0e4990b71
+  sni: tro-sg05.gproxy.pro
   skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: trojan-grpc
   udp: true
-  ws-opts:
-    path: "/trojan"
-    headers:
-      Host: nusa.lowh.site
